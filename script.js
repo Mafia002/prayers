@@ -22,9 +22,9 @@ var toggleAccordion = () => {
       .then(data => {
         var prayerTimes = data.data.timings;
         var prayerTimesHtml = '';
+        prayerTimesHtml += '<ion-title>Prayer Times for ' + cityName + ', ' + country +  '</ion-title>';
         
         if (prayerTimes) {
-          prayerTimesHtml += '<ion-title>Prayer Times for ' + cityName + ', ' + country +  '</ion-title>';
           prayerTimesHtml += '<ion-grid>';
           for (var key in prayerTimes) {
             prayerTimesHtml += '<ion-row><ion-col><strong>' + key + ':</strong> </ion-col>' +'<ion-col>'+ prayerTimes[key]+'</ion-col>' + '</ion-row>';
