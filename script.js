@@ -43,7 +43,9 @@ var toggleAccordion = () => {
         document.getElementById('prayer-times').innerHTML = prayerTimesHtml;
       })
       .catch(error => {
-        console.error('Error fetching prayer times:', error);
+        // console.error('Error fetching prayer times:', error);
+        document.getElementById('prayer-times').innerHTML = error;
+
         
         // Retrieve prayer times from local storage
         var savedPrayerTimes = localStorage.getItem('prayerTimes');
@@ -56,7 +58,7 @@ var toggleAccordion = () => {
   }
 
   document.getElementById('fetchPrayerTimes').addEventListener('click', function() {
-    var cityName = document.getElementById('cityName');
+    var cityName = document.getElementById('cityName').value;
     var country = document.getElementById('country').value;
     var selectedDate = new Date(document.getElementById('date').value);
     var formattedDate = formatDate(selectedDate);
@@ -68,4 +70,4 @@ var toggleAccordion = () => {
       alert('Please enter city name, country, and date.');
     }
   });
-  console.log(cityName.parentNode);
+
