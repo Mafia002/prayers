@@ -33,7 +33,7 @@ var toggleAccordion = () => {
 
          let con =  document.querySelector('.firstView');
          con.classList.add('none');
-         console.log(con)
+      
           // Save prayer times to local storage
           localStorage.setItem('prayerTimes', JSON.stringify(prayerTimes));
         } else {
@@ -62,7 +62,7 @@ var toggleAccordion = () => {
     var country = document.getElementById('country').value;
     var selectedDate = new Date(document.getElementById('date').value);
     var formattedDate = formatDate(selectedDate);
-    console.log(cityName);
+   
     
     if (cityName && country && formattedDate) {
       getPrayerTimes(cityName, country, formattedDate);
