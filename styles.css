@@ -1,0 +1,146 @@
+/* Customize the background color and font */
+
+/* *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+ion-header,
+ion-toolbar {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+ion-toolbar {
+  --background: #000000;
+  --color: white;
+
+  --border-color: #f24aec;
+  --border-width: 4px 0;
+  --border-style: double;
+
+  --min-height: 80px;
+  --padding-top: 20px;
+  --padding-bottom: 20px;
+}
+
+.logo {
+  height: 2em;
+}
+/* input */
+/* .native-input:focus {
+  border-bottom: 3px solid #333;
+} */
+ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #3399ff;
+  transition: 0.4s;
+}
+#cityName:focus ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
+  left: 0;
+}
+
+/* input:valid :after {
+  position: absolute;
+  content: "✓";
+  padding-left: 5px;
+} */
+
+ion-split-pane {
+  --side-width: 250px;
+  --side-max-width: 250px;
+
+  --border: 1px dashed #b3baff;
+}
+
+ion-content {
+  background-color: #f2f3f4;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* Customize card appearance */
+ion-card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 16px;
+}
+
+/* Customize card header */
+ion-card-header {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* Customize card content */
+ion-card-content {
+  padding: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Customize button color */
+ion-button {
+  --ion-color-primary: #3498db;
+}
+
+/* Center-align prayer times */
+#prayer-times {
+  text-align: center;
+  background-image: url("./assets/splash.jpg");
+  background-size: cover;
+  color: #fff;
+}
+
+.none {
+  /* display: none; */
+
+  animation: hide 1.3s;
+  animation-fill-mode: forwards;
+
+  /* transition: display 1.5s; */
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+    /* 
+      display: block; */
+    /* transform: rotate3d(1,1,1 ,30deg); */
+    transform: rotateX(720deg);
+  }
+
+  100% {
+    opacity: 0.2;
+    display: none;
+  }
+}
+
+@-webkit-keyframes hide {
+  0% {
+    opacity: 1;
+    /* 
+      display: block; */
+    /* transform: rotate3d(1,1,1 ,30deg); */
+    transform: rotateX(720deg);
+  }
+
+  100% {
+    /* opacity: 0; */
+    display: none;
+  }
+}
+
+/* Add an Islamic pattern background */
+
+/* Dark theme */
+.dark-theme {
+  background-color: #333;
+  color: #fff;
+}

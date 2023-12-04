@@ -1,0 +1,36 @@
+{
+    "name": "Prayers Times Application",
+    "short":"prayers-times-app",
+    "start_url": ".",
+    "display":"standalone",
+    "background_color":"#fff",
+    "theme_color":"#000",
+    "icons": [
+      {
+        "src": "assets/logo.svg",
+        "type": "image/svg",
+        "sizes": "48x48"
+       
+      },
+      {
+        "src": "assets/logo.svg",
+        "type": "image/svg",
+        "sizes": "72x72 96x96 128x128 256x256"
+       
+      }
+      ,
+      {
+        "src": "assets/logo.svg",
+        "type": "image/svg",
+        "sizes": "144x144",
+        "purpose":"any maskable"
+      }
+      ,
+      {
+        "src": "assets/splash00.png",
+        "type": "image/png",
+        "sizes": "512x512"
+  
+      }
+    ]
+  }
