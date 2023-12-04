@@ -1,2 +1,2 @@
-# prayers
+# Islamic prayers-times
 basic app to show prayers times ..just add city ,country
