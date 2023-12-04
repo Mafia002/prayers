@@ -15,7 +15,7 @@ var toggleAccordion = () => {
   }
 
   function getPrayerTimes(cityName, country, date) {
-    var aladhanUrl = 'http://api.aladhan.com/v1/timingsByCity/' + date + '?city=' + encodeURIComponent(cityName) + '&country=' + encodeURIComponent(country);
+    var aladhanUrl = 'https://api.aladhan.com/v1/timingsByCity/' + date + '?city=' + encodeURIComponent(cityName) + '&country=' + encodeURIComponent(country);
     
     fetch(aladhanUrl)
       .then(response => response.json())
