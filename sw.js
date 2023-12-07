@@ -7,7 +7,7 @@ const CACHE_NAME = `Prayer-Times-${VERSION}`;
 // The static resources that the app needs to function.
 const APP_STATIC_RESOURCES = [
   "/",
-  "/index-ionic.html",
+  "/index.html",
   "/script.js",
   "/styles.css",
   "/icons/logo.svg",
