@@ -24,7 +24,7 @@ var toggleAccordion = () => {
              var prayerTimesLoc = '';
         var prayerTimesHtml = '';
         
-        prayerTimesLoc += '<ion-title>Prayer Times for ' + cityName + ', ' + country +  '</ion-title>';
+        prayerTimesLoc += '<ion-title> ' + cityName + ', ' + country +  '</ion-title>';
         
         if (prayerTimes) {
           prayerTimesHtml += '<ion-grid>';
