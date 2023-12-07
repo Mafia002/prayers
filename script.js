@@ -21,8 +21,10 @@ var toggleAccordion = () => {
       .then(response => response.json())
       .then(data => {
         var prayerTimes = data.data.timings;
+             var prayerTimesLoc = '';
         var prayerTimesHtml = '';
-        prayerTimesHtml += '<ion-title>Prayer Times for ' + cityName + ', ' + country +  '</ion-title>';
+        
+        prayerTimesLoc += '<ion-title>Prayer Times for ' + cityName + ', ' + country +  '</ion-title>';
         
         if (prayerTimes) {
           prayerTimesHtml += '<ion-grid>';
@@ -39,7 +41,7 @@ var toggleAccordion = () => {
         } else {
           prayerTimesHtml = '<p>Prayer times not available for the specified city, country, and date.</p>';
         }
-        
+         document.getElementById('cityCountry').innerHTML = prayerTimesLoc;
         document.getElementById('prayer-times').innerHTML = prayerTimesHtml;
       })
       .catch(error => {
